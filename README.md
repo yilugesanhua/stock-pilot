@@ -24,8 +24,8 @@ Stock Pilot 是一个只读的 Codex 美股分析 skill，默认分析未来 2-8
 - Python 3.12 或 3.13
 - [uv](https://docs.astral.sh/uv/)
 - 一个包含真实邮箱或项目 URL 的 `SEC_USER_AGENT`
-- `FRED_API_KEY` 可选；部分序列支持公共 CSV 降级路径
-- 运行 `collect` / `run` 所需的外部 skill，详见 [DEPENDENCIES.md](DEPENDENCIES.md)
+- `FRED_API_KEY` 可选；宏观适配器使用公共 CSV 降级路径
+- 可选的 Agent Reach、Longbridge 和 reasoning skill，详见 [DEPENDENCIES.md](DEPENDENCIES.md)
 
 ## 安装
 
@@ -42,14 +42,12 @@ uv sync --frozen --project skill/stock-pilot
 
 Linux/macOS 用户可以先安装运行环境，再将 `skill/stock-pilot` 和两个已捆绑的 Longbridge skill 复制到 `~/.codex/skills/`。
 
-安装其余授权依赖后执行：
-
 ```powershell
-$env:SEC_USER_AGENT = "stock-pilot/0.2.1 your-real-email@your-domain.com"
+$env:SEC_USER_AGENT = "stock-pilot/0.2.2 your-real-email@your-domain.com"
 uv run --project skill/stock-pilot python skill/stock-pilot/scripts/stock_pilot.py doctor --output doctor.json
 ```
 
-不要直接复制示例地址访问 SEC；必须替换为你的真实联系信息。
+不要直接复制示例地址访问 SEC；必须替换为你的真实联系信息。`doctor` 会显示可选集成是否可用。
 
 ## 使用
 

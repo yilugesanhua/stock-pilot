@@ -18,4 +18,4 @@ done
 
 uv sync --frozen --project "$SKILLS_ROOT/stock-pilot"
 printf 'Installed stock-pilot at %s\n' "$SKILLS_ROOT/stock-pilot"
-printf 'Install authorized technical-analysis and api-data-fetcher skills, then run doctor.\n'
+printf 'The public Yahoo/FRED/Cboe/Treasury path is bundled; run doctor to inspect optional integrations.\n'

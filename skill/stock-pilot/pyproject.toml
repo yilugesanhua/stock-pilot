@@ -1,6 +1,6 @@
 [project]
 name = "stock-pilot-skill"
-version = "0.2.1"
+version = "0.2.2"
 requires-python = ">=3.12,<3.14"
 dependencies = [
   "trading-skills==0.16.0",

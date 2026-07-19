@@ -7,7 +7,7 @@ This folder contains the source and validation harness for the `stock-pilot` Cod
 - `design/data-freshness-policy.md`: public data freshness and gating rules.
 - `dependencies/skills/longbridge-fundamentals`: fundamentals and valuation skill source.
 - `dependencies/skills/longbridge-content`: SEC filings and news skill source.
-- External technical, macro, synthesis, and social skills are installed separately; their copied local sources are ignored until redistribution licenses are verified.
+- Public technical and macro adapters are bundled in `skill/stock-pilot/scripts`; social and reasoning skills remain optional external integrations.
 - Longbridge CLI is an external proprietary prerequisite and is not redistributed here.
 - Authentication screenshots are intentionally excluded from this public copy.
 - `skill/stock-pilot`: maintainable source for the globally installed personal skill.
