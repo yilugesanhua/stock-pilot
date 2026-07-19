@@ -1,0 +1,30 @@
+{
+  "public_news_url": "https://news.google.com/rss/search?q=GOOGL",
+  "news": [
+    {
+      "published_at": "2099-01-01T12:00:00Z",
+      "title": "Synthetic fixture headline",
+      "url": "https://example.invalid/stock-pilot-fixture",
+      "relevant": true,
+      "detail_status": "metadata_only"
+    }
+  ],
+  "catalysts": {
+    "confirmed": [],
+    "estimated": [
+      {
+        "event": "Synthetic earnings window",
+        "date": "2099-02-01"
+      }
+    ]
+  },
+  "agent_reach": {
+    "available": false,
+    "verified": false
+  },
+  "freshness": {
+    "status": "CURRENT",
+    "newest_news_at": "2099-01-01T12:00:00Z"
+  },
+  "warnings": []
+}

@@ -9,6 +9,7 @@
 .pytest_cache/
 runs/
 cache/
+dist/
 *.log
 *.exe
 references/session-screenshots/

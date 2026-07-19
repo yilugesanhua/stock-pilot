@@ -1,0 +1,8 @@
+{
+  "quality_gate_passed": true,
+  "submissions_url": "https://data.sec.gov/submissions/CIK0001652044.json",
+  "freshness": {
+    "status": "CURRENT_INDEX"
+  },
+  "warnings": []
+}
