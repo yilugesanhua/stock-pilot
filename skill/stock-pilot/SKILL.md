@@ -19,8 +19,8 @@ data must prove it is current before any action recommendation is allowed.
 
 - `longbridge-fundamentals`: company, valuation, and structured financial data; Longbridge is optional.
 - `longbridge-content`: filings, corporate actions, and recent news; SEC/Google News public fallback is automatic.
-- `technical-analysis`: deterministic indicators from public Yahoo daily candles when Longbridge is unavailable.
-- `api-data-fetcher`: FRED history plus current Cboe VIX and US Treasury overlay.
+- `technical_public.py`: deterministic indicators from public Yahoo daily candles.
+- `macro_public.py`: FRED history plus current Cboe VIX and US Treasury overlay.
 - `us-stock-analysis`: report reasoning framework only; it may not override facts.
 - `agent-reach`: X and Reddit cross-checks; social posts are clues, not facts.
 

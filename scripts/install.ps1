@@ -24,14 +24,5 @@ if (-not $SkipSync) {
     uv sync --frozen --project $destination
 }
 
-$required = @(
-    "technical-analysis\scripts\technicals.py",
-    "api-data-fetcher\scripts\fetch_market_macro.py"
-)
-$missing = @($required | Where-Object { -not (Test-Path (Join-Path $skillsRoot $_)) })
-
 Write-Host "Installed stock-pilot at $destination"
-if ($missing.Count -gt 0) {
-    Write-Warning "Live collect/run still requires: $($missing -join ', ')"
-    Write-Host "See DEPENDENCIES.md, install authorized copies, then run doctor."
-}
+Write-Host "The public Yahoo/FRED/Cboe/Treasury path is bundled. Run doctor to inspect optional integrations."

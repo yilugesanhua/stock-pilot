@@ -4,6 +4,17 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-07-19
+
+### Added
+
+- Bundled public Yahoo technical and FRED/Cboe/Treasury macro adapters.
+- Unit coverage for the public adapter schemas and indicator edge cases.
+
+### Changed
+
+- Live public-data runs no longer require the unlicensed technical-analysis or api-data-fetcher skill trees.
+
 ## [0.2.1] - 2026-07-19
 
 ### Added
@@ -31,7 +42,8 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - Initial public release of the Stock Pilot Codex skill.
 
-[Unreleased]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/yilugesanhua/stock-pilot/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/yilugesanhua/stock-pilot/releases/tag/v0.1.0

@@ -31,8 +31,8 @@ def dependency_script(skill_name, script_name):
 DEPENDENCIES = {
     "filings": dependency_script("longbridge-content", "filing_evidence.py"),
     "financials": dependency_script("longbridge-fundamentals", "reconcile_financials.py"),
-    "technicals": dependency_script("technical-analysis", "technicals.py"),
-    "macro": dependency_script("api-data-fetcher", "fetch_market_macro.py"),
+    "technicals": SKILL / "scripts" / "technical_public.py",
+    "macro": SKILL / "scripts" / "macro_public.py",
     "news": dependency_script("longbridge-content", "news_catalysts.py"),
 }
 BASE_BENCHMARKS = ["SPY"]

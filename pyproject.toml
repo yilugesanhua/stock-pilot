@@ -1,6 +1,6 @@
 [project]
 name = "stock-pilot-runtime"
-version = "0.2.1"
+version = "0.2.2"
 description = "Runtime dependencies for the stock-pilot workflow"
 requires-python = ">=3.12,<3.14"
 dependencies = [
