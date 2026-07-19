@@ -9,3 +9,6 @@
 - [ ] Run `doctor` with live credentials only outside CI.
 - [ ] Review data-provider terms, rate limits, and redistribution restrictions.
 - [ ] Review financial-research disclaimers for the jurisdictions where the repository will be published.
+- [ ] Confirm both `pyproject.toml` files match the release tag.
+- [ ] Confirm CI and CodeQL pass on the release commit.
+- [ ] Update `CHANGELOG.md` before publishing the release.

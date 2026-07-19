@@ -22,7 +22,7 @@ The following remain installed on this machine and are intentionally excluded:
 - Browser cookies and Agent Reach login state.
 - Generated stock-analysis runs.
 
-Never commit credentials. Recreate virtual environments from the requirement files in `dependencies/`.
+Never commit credentials. Recreate the runtime with `uv sync --frozen --project skill/stock-pilot`.
 
 ## Validation Scope
 
@@ -47,6 +47,7 @@ Never commit credentials. Recreate virtual environments from the requirement fil
 ## Skill State
 
 - Install with `scripts/install.ps1`, or copy `skill/stock-pilot` to the Codex skills directory.
+- Linux and macOS users can run `scripts/install.sh`.
 - Commands: `doctor`, `collect`, `analyze`, `report`, and `run`.
 - Historical local validation artifacts are intentionally excluded from the public repository.
 - Users must supply their own `SEC_USER_AGENT`, optional API keys, and authorized integrations.

@@ -1,12 +1,15 @@
 # Security Policy
 
-Do not report credentials, cookies, OAuth tokens, device codes, broker account
-identifiers, or generated reports containing private data in a public issue.
-Use a private security contact configured by the repository owner.
+## Supported Versions
 
-Before publishing a clone, run a secret scanner and inspect Git history. Keep
-`.env`, `runs/`, caches, screenshots, browser state, and proprietary binaries
-out of Git.
+Security fixes are provided for the latest published release and the current `main` branch.
 
-The SEC User-Agent must contain a real maintainer email or project URL. Never
-use a placeholder contact against SEC endpoints.
+## Reporting
+
+Use GitHub's **Report a vulnerability** form in the repository Security tab. If that form is unavailable, email `yilugesanhua@gmail.com` with the repository name and a minimal reproduction.
+
+Do not include credentials, cookies, OAuth tokens, device codes, brokerage identifiers or private generated reports in a public issue. Revoke exposed credentials before reporting them.
+
+## Repository Hygiene
+
+Keep `.env`, `runs/`, caches, screenshots, browser state and proprietary binaries out of Git. The SEC User-Agent must contain a real maintainer email or project URL; never send the example contact to SEC endpoints.
