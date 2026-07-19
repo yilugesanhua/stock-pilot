@@ -1,0 +1,23 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+**/.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+runs/
+cache/
+*.log
+*.exe
+references/session-screenshots/
+copy*.log
+
+# Install these dependency skills separately. Their copied local sources do not
+# currently include license files suitable for redistribution.
+dependencies/skills/agent-reach/
+dependencies/skills/api-data-fetcher/
+dependencies/skills/technical-analysis/
+dependencies/skills/us-stock-analysis/
+/tests/

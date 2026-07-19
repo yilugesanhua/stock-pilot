@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stock Pilot"
+  short_description: "Current-data US stock analysis for a 2-8 week horizon"
+  default_prompt: "Use $stock-pilot to analyze this US ticker with current data and give a direct Chinese recommendation without position sizing or trading."

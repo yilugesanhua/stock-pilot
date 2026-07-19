@@ -1,0 +1,13 @@
+[project]
+name = "stock-pilot-skill"
+version = "1.0.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "trading-skills==0.16.0",
+  "fredapi==0.5.2",
+  "pandas==3.0.3",
+  "yfinance==1.5.1",
+]
+
+[tool.uv]
+package = false
