@@ -1,0 +1,30 @@
+{
+  "market_snapshot": {
+    "vix": {
+      "value": 17.5,
+      "change_pct": -2.0,
+      "last_trade_time": "2099-01-01T20:00:00Z",
+      "source_url": "https://www.cboe.com/tradable_products/vix/"
+    },
+    "treasury_yields": {
+      "date": "2099-01-01",
+      "2y": 3.9,
+      "10y": 4.1,
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates"
+    }
+  },
+  "series": [
+    {
+      "series_id": "FEDFUNDS",
+      "latest_value": 3.75,
+      "latest_date": "2098-12-01",
+      "source": "synthetic_fixture",
+      "freshness": {
+        "status": "CURRENT"
+      }
+    }
+  ],
+  "freshness": {
+    "status": "CURRENT"
+  }
+}

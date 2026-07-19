@@ -1,0 +1,9 @@
+{
+  "ticker": "GOOGL",
+  "symbol": "GOOGL.US",
+  "horizon": "2-8w",
+  "sector_etf": "XLC",
+  "company": {
+    "company_name": "Alphabet Inc. (synthetic fixture)"
+  }
+}

@@ -18,7 +18,7 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         python: ["3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v7
         with:
           version: "0.8.15"
@@ -26,5 +26,12 @@ jobs:
           enable-cache: true
       - run: uv sync --frozen --project skill/stock-pilot
       - run: uv run --project skill/stock-pilot python tools/check_version.py
+      - run: uv run --project skill/stock-pilot python tools/offline_smoke.py
       - run: uv run --project skill/stock-pilot python -m compileall -q skill/stock-pilot/scripts tools
       - run: uv run --project skill/stock-pilot python -m unittest discover -s skill/stock-pilot/tests -v
+      - run: uv run --project skill/stock-pilot python tools/package_release.py
+      - if: runner.os == 'Linux'
+        run: sh -n scripts/install.sh
+      - if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/install.ps1 -CodexHome "$env:RUNNER_TEMP/codex" -SkipSync

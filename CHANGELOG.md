@@ -4,6 +4,14 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-07-19
+
+### Added
+
+- Synthetic offline end-to-end fixture covering audit, analysis and report rendering.
+- Reproducible release ZIP and SHA-256 checksum generation.
+- CI smoke tests for Windows and POSIX installers.
+
 ## [0.2.0] - 2026-07-19
 
 ### Added
@@ -23,6 +31,7 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 - Initial public release of the Stock Pilot Codex skill.
 
-[Unreleased]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/yilugesanhua/stock-pilot/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/yilugesanhua/stock-pilot/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/yilugesanhua/stock-pilot/releases/tag/v0.1.0

@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "price": {
+        "current": 200.0,
+        "change_pct": 1.2
+      },
+      "price_structure": {
+        "sma20": 196.0,
+        "sma50": 190.0,
+        "sma200": 175.0,
+        "support": {
+          "20d": 192.0,
+          "60d": 182.0
+        },
+        "resistance": {
+          "20d": 210.0,
+          "60d": 225.0
+        },
+        "returns_pct": {
+          "20": 6.5,
+          "40": 10.2
+        }
+      },
+      "indicators": {
+        "atr": {
+          "value": 5.0,
+          "percent": 2.5
+        },
+        "rsi": {
+          "value": 58.0
+        },
+        "macd": {
+          "histogram": 1.4
+        }
+      },
+      "relative_strength_pct_points": {
+        "XLC": {
+          "20": 2.8
+        }
+      },
+      "freshness": {
+        "is_latest_available": true,
+        "data_date": "2099-01-01"
+      }
+    }
+  ]
+}

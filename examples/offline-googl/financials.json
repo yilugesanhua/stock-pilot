@@ -1,0 +1,28 @@
+{
+  "selected_latest": {
+    "period": "SYNTHETIC.Q2",
+    "revenue_usd": 96000000000,
+    "net_income_usd": 28000000000,
+    "evidence": {
+      "operating_cash_flow_usd": {
+        "duration_days": 91
+      },
+      "capex_usd": {
+        "duration_days": 91
+      }
+    }
+  },
+  "valuation": {
+    "ttm_pe": 24.5,
+    "normalization_required": false
+  },
+  "source_url": "https://www.sec.gov/edgar/browse/?CIK=1652044",
+  "company_facts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+  "freshness": {
+    "status": "CURRENT",
+    "latest_quote_checked": true,
+    "official_period": "SYNTHETIC.Q2",
+    "official_filing_date": "2099-01-01"
+  },
+  "warnings": []
+}

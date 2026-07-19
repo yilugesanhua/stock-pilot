@@ -12,15 +12,19 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v7
         with:
           version: "0.8.15"
           python-version: "3.12"
       - run: uv sync --frozen --project skill/stock-pilot
       - run: uv run --project skill/stock-pilot python tools/check_version.py
+      - run: uv run --project skill/stock-pilot python tools/offline_smoke.py
       - run: uv run --project skill/stock-pilot python -m unittest discover -s skill/stock-pilot/tests -v
+      - run: uv run --project skill/stock-pilot python tools/package_release.py
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release view "$GITHUB_REF_NAME" || gh release create "$GITHUB_REF_NAME" --generate-notes --title "Stock Pilot $GITHUB_REF_NAME"
+        run: |
+          gh release view "$GITHUB_REF_NAME" || gh release create "$GITHUB_REF_NAME" --generate-notes --title "Stock Pilot $GITHUB_REF_NAME"
+          gh release upload "$GITHUB_REF_NAME" dist/* --clobber
