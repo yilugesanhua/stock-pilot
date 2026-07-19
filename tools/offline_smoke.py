@@ -49,7 +49,9 @@ def main() -> int:
             if heading not in report_md:
                 raise RuntimeError(f"Offline report is missing {heading}")
 
-        print(f"Offline smoke OK: recommendation={analysis['recommendation']}")
+        # Keep the CI status line ASCII so Windows cp1252 runners cannot fail
+        # after the actual report pipeline has already completed.
+        print("Offline smoke OK")
     return 0
 
 
