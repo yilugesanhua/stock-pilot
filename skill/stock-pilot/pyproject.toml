@@ -6,7 +6,7 @@ dependencies = [
   "trading-skills==0.16.0",
   "fredapi==0.5.2",
   "pandas==3.0.3",
-  "yfinance==1.5.1",
+  "yfinance==1.5.2",
 ]
 
 [tool.uv]
